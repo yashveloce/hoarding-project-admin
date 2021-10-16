@@ -32,7 +32,6 @@ mutation MyMutation ($id:Int=0){
 const INSERT_MEDIA = gql`
 mutation MyMutation($media_type: String = "") {
     insert_media_type_master_one(object: {media_type: $media_type}) {
-      id
       media_type
     }
   }
@@ -64,6 +63,7 @@ function Media_Type_Master() {
     }
     const onFormSubmit = (e) => {
         e.preventDefault();
+        console.log(e.target[0].value)
         insert_employee({ variables: { media_type: e.target[0].value } })
         toast.configure();
         toast.success('Successfully Inserted')
