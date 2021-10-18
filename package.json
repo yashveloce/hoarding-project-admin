@@ -1,6 +1,6 @@
 {
   "name": "franchise-master",
-  "homepage": "https://hoardingweb.herokuapp.com/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
